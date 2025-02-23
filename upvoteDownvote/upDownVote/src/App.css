@@ -1,0 +1,11 @@
+tbody tr:first-child {
+  background-color: green;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 20px;
+}
