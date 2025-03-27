@@ -5,6 +5,7 @@ import Table from "./Table";
 
 function App() {
   const [list, setList] = useState([]);
+
   const fetchData = async () => {
     try {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -28,6 +29,7 @@ function App() {
     const newList = list.filter((contact, id) => id !== index);
     setList(newList);
   };
+
   return (
     <>
       <Form handleSubmit={handleSubmit} />
